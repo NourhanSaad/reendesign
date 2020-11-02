@@ -11,7 +11,7 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 152px;
+    height: auto;
     bottom: 0;
 
 }
@@ -28,7 +28,7 @@ header .navbar_header {
 
 /*header container */
 header .container {
-    width: 1140px;
+   
     display: flex;
     flex-wrap: wrap;
     margin: 0 110px;
@@ -42,7 +42,7 @@ header .container {
 
 ul.contact {
 
-    width: 234px;
+    width: auto;
     margin: 0;
     padding: 0;
     position: relative;
@@ -77,7 +77,7 @@ ul.contact {
 
 ul .social {
     padding: 0;
-    width: 159px;
+    width: auto;
 
 
 }
@@ -97,10 +97,12 @@ ul .social {
 }
 
 /*menu              */
+.menu {
+    background-color:#fff;
+}
 .menu .container {
     padding: 30px 0;
-
-
+    
 }
 
 .menu .container:hover {
@@ -117,9 +119,10 @@ ul .social {
 .menu .menu_items li a {
     color: #506A85;
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
+    padding:3px;
     font-weight: 700;
-    font-family: 'Source Sans Pro', sans-serif;
+   
     text-align: center;
     text-decoration: none;
 
@@ -129,15 +132,13 @@ ul .social {
     background-color: #fff;
 }
 
-.menu .menu_items:hover {
-    background-color: #fff;
-}
 
+/*
 .menu .menu_items li a i:last-child {
     margin-left: 50px;
     margin-right: 20px;
 }
-
+*/
 
 /*mega menu*/
  .menu_i .mega{
@@ -154,22 +155,24 @@ ul .social {
     right:7%;
     margin-top: 30px;
     background-color: #F2F5F7;
-    padding: 0 30px;
+    padding:  30px;
     text-align: left;
-    height: 400px;
+    height: auto;
     z-index: 10000;
     border: 1px solid #506a85;
     color: #73879C;
     line-height: 1;
   }
+.inner .btn {
+    margin-left: 45%;
+}
 
 .navbar .menu .menu_items .menu_i:hover .mega {
   display:block;
 }
-.navbar .menu .menu_items .menu_i a:hover {
-  background-color: #F2F5F7;
-  border-radius:5px;
-  padding:5px;
+.navbar .menu .menu_items a:hover {
+    background-color: #F2F5F7;
+    border-radius: 5px;
 }
 
   .mega img {
@@ -179,7 +182,7 @@ ul .social {
   }
 
 .navbar .menu .menu_items li ul .mega .inner div {
-    width: 24%;
+    width: 24.5%;
 }
 
 .mega h4 {
@@ -234,7 +237,6 @@ ul.slides {
 ul.slides input {
     display: none;
 }
-
 
 .slide-container {
     display: block;
@@ -311,7 +313,7 @@ ul.slides input {
 
 .carousel-dots {
     position: absolute;
-    left: 44%;
+    left: 46%;
    
     bottom: 0;
     width: auto;
@@ -369,19 +371,20 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 
 .who_we_are .container,
 .work .container {
-    width: 1140px;
-    display: flex;
-    flex-wrap: wrap;
+   
+   
+  
     margin: 0 110px;
-    padding: 0;
-    height: 300px;
+    padding:  5% 0;
+    height: auto;
     text-align: center;
+   
 }
 
-
-
+.who_we_are .container p{
+    margin-bottom:3%;
+}
 .latest_works .container {
-    width: 1140px;
     margin: 0 110px;
     padding: 0;
     height: 150px;
@@ -408,22 +411,25 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
     color: #73879C;
 }
 
-.who_we_are ul li {}
-
-.who_we_are ul,
-footer .container,
-.bottom .container {
-    width: 1140px;
-    display: flex;
-    margin: 0 110px;
-    padding: 0;
-    list-style: none;
-    text-align: left;
+.who_we_are ul li i {
+    font-size:40px;
 }
 
+
+    .who_we_are ul,
+    footer .container,
+    .bottom .container {
+        width:auto;
+        display: flex;
+        margin: 0 110px;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+    }
+
 .who_we_are ul li {
-    width: 33%;
-    margin-right: 100px;
+    width: auto;
+    margin:auto;
 
 }
 
@@ -463,10 +469,10 @@ footer .container,
     display: flex;
     justify-content: center;
     margin: 0 110px;
-    width: 1140px;
+    width:auto;
     text-align: center;
     padding: 0;
-    height: 400px;
+    height: auto;
     padding-bottom: 50px;
   }
 
@@ -482,7 +488,7 @@ footer .container,
 }
 
 .latest_works .container_fig figcaption {
-    font-family: 'Lato-Bold';
+    
     padding-top: 20px;
 }
 
@@ -492,13 +498,19 @@ footer .container,
     color: #73879C;
     font-size: 14px;
 }
+    .latest_works .container h2, .who_we_are .container h2, .work .container h2, .latest_works .container p,
+    .work .container p, .who_we_are .container p {
+        width: auto;
+    }
 
+  
 .latest_works .container_fig .figure figure .img_overlay {
     position: relative;
 }
 
 .latest_works .container_fig .figure figure .img_overlay .img {
     display: block;
+    width:100%;
 }
 
 .latest_works .container_fig .figure figure .img_overlay .overlay {
@@ -535,10 +547,10 @@ footer .container,
 
 .latest_works .imgs .container {
 
-
+    display:flex;
     justify-content: center;
     margin: 0 110px;
-    width: 1140px;
+    width:auto;
     padding: 0;
     height: auto;
 }
@@ -554,6 +566,7 @@ footer .container,
   }
   .latest_works .imgs img {
     cursor: pointer;
+  
   }
   .latest_works .imgs .container .img_left .img_1, .latest_works .imgs .container .img_right .img_2 {
     margin-right: 15px;
@@ -718,678 +731,411 @@ form button:hover {
 
 
 
+/* Responsiveness */
 
 
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:700px) {
 
     .who_we_are .container, .work .container, .latest_works .container {
-        width: auto;
-        height: auto;
+       
         text-align: center;
-        margin: 0 auto;
+        margin: auto 3%;
         padding: 1%;
         padding-top: 10%;
     }
 
     .who_we_are ul {
         display: block;
+        margin:auto 3%;
+        height:auto;
+        
+       
     }
-      
-    .who_we_are ul li p{
-      width:70%;
-      margin:0;
-    }
-   
-  .latest_works .container h2{
-      width:auto;
-
-  }
-  .latest_works .container p {
-    width: auto;
-  }
-
-  .latest_works .container_fig {
-    display: block;
-    height: auto;
-    margin: 0;
-    width: 100%;
-  }
-
-
-  .latest_works .imgs .container {
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
-    .latest_works .imgs .container .img_right{
-       margin-right:80px;
-    }
-
-    .latest_works .imgs .container .img_left .img_1, .latest_works .imgs .container .img_right .img_2 {
-      margin: 0 auto;
-    }
-      .latest_works .imgs .container .img_left .img_1, .latest_works .imgs .container .img_right .img_2 {
-      }  
-    .latest_works .container_fig figure {
-      margin-bottom: 5%;
-    
-    }
-  .latest_works .imgs .container img{
-      margin-bottom:4%;
-  }
-  footer .container {
-    display: block;
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1%;
-    
-  }
-  .bottom {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  footer .container div  {
-   margin:0 auto;
-    width: 70%;
-    margin-bottom:10%;
-  }
-
-    footer .container .free, footer .container .who {
-      padding: 0;
-    }
-
-
-  footer input{
-      width:100%;
-  }
-
-  form button {
-   
-    margin-right:auto;
-  }
-
-
-  .bottom .container {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    width:80%;
-  }
-
-  .bottom p {
-    font-size: 12px;
-    margin-top: 4%;
-    margin-left: 2%;
-
-  }
-
-  
-    .bottom .container ul li {
-      margin: 1%;
-    }
-
-      .bottom .container ul li a {
-        font-size: 14px;
-      }
-  .navbar_header .container {
-    width: 95%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-
-
-  .menu .container {
-    width: auto;
-    height: auto;
-    margin-left: 7%;
-    font-size: 14px;
-  }
-
-    .menu .container .menu_items li {
-      display: none;
-    }
-
-      .menu .container .menu_items li:nth-child(6) {
-        display: block;
-      }
-
-
-
-
-  .navbar .menu .menu_items li ul .mega .inner {
-    width: auto;
-    left: 1%;
-    right: 1%;
-    padding: 0 15px;
-    height: auto;
-    z-index: 10000;
-    font-size: 12px;
-    padding-bottom: 20px;
-  }
-
-    .navbar .menu .menu_items li ul .mega .inner img {
-      width: 30px;
-      height: 30px;
-    }
-
-    .navbar .menu .menu_items li ul .mega .inner button {
-      font-size: 8px;
-    }
-}
-
-@media screen and (min-width:521px) and (max-width:768px) {
-    .who_we_are .container, .work .container, .latest_works .container {
-        width: auto;
-        height: auto;
-        text-align: center;
-        margin: 0 auto;
-        padding: 2%;
-        padding-top: 10%;
-    }
-
-  .who_we_are ul {
-    margin: 0;
-    padding: 5%;
-    width: auto;
-    display: block;
-  }
-
-    .who_we_are ul li {
-      margin: 0 7%;
-      width: auto;
-    }
-
-      .who_we_are ul li p {
-        width: auto;
-      }
-
-  .latest_works .container h2 {
-    width: auto;
-  }
-
-  .latest_works .container p {
-    width: auto;
-  }
-
-  .latest_works .container_fig {
-    display: block;
-    height: auto;
-    margin: 0;
-    width: 100%;
-  }
-
-
-  .latest_works .imgs .container {
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
-    .latest_works .container_fig figure
-    {
-       margin-bottom:7%;
-    }
-
-    .latest_works .imgs .container .img_left, .latest_works .imgs .container .img_right {
-      margin: 0;
-      width: 100%;
-      margin-bottom: 4%;
-    }
-  footer .container {
-    display: block;
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1%;
-  }
-  .bottom
-  {
-      width:auto;
-      height:auto;
-  }
-    .bottom .container {
-      text-align: center;
-      margin: 0 auto;
-      width: 80%;
-    }
-  .bottom p{
-      font-size:12px;
-      margin-top:4%;
-      margin-left:2%;
-  }
-  
-      .bottom .container ul li{
-          margin:1%;
-          
-      }
-        .bottom .container ul li a{
-            font-size:14px;
+        .who_we_are ul li, .who_we_are ul li p {
+            width: auto;
         }
-        footer .container div {
-          margin: 0 auto;
-          width: 70%;
-          margin-bottom: 10%;
-        }
+   
 
-  footer .container .free, footer .container .who {
-    padding: 0;
-  }
+    .latest_works .container_fig {
+        display: block; 
+        margin: 0;
+       
+    }
 
-  footer .container img {
-    width: 70px;
-    height: 70px;
-  }
 
+    .latest_works .imgs .container {
+    
+      margin:auto ;
+      display:block;
+        
+    }
+
+       
  
-  footer input{
-      width:100%;
-  }
-  form button {
-    margin-left:auto;
-  }
-  .navbar_header .container {
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-
-
-
-
-  .menu .container {
-    width: auto;
-    height: auto;
-    margin-left:7%;
-    font-size: 14px;
-  }
-    .menu .container .menu_items li{
-      display:none;
+    .latest_works .imgs .container .img_left, .latest_works .imgs .container .img_left .img_1
+    ,.latest_works .imgs .container .img_right, .latest_works .imgs .container .img_right .img_2 {
+        margin:0;
     }
-      .menu .container .menu_items li:nth-child(5),.menu .container .menu_items li:nth-child(6) {
+
+    footer .container {
         display: block;
-      }
-    
-
-
-
-  .navbar .menu .menu_items li ul .mega .inner {
-    width: auto;
-    left: 2%;
-    right: 2%;
-    padding: 0 15px;
-    height: auto;
-    z-index: 10000;
-    font-size: 14px;
-    padding-bottom: 20px;
-  }
-  .navbar .menu .menu_items li ul .mega .inner img{
-      width:50px;
-      height:50px;
-  }
-  .navbar .menu .menu_items li ul .mega .inner button{
-      font-size:10px;
-  }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px){
-    .who_we_are .container, .work .container, .latest_works .container {
         width: auto;
         height: auto;
         text-align: center;
         margin: 0 auto;
         padding: 1%;
-        padding-top: 10%;
-    }
-  .who_we_are ul {
-      margin:0;
-      padding:5%;
-      width:auto;
-      
-      
-  }
-  .who_we_are ul li {
-  margin:0 2% ;
-    width:auto;
-   
-  }
-
-    .who_we_are ul li p{
-       
-        width:auto;
-    }
- 
-  .latest_works .container h2 {
-    width: auto;
-  }
-
-  .latest_works .container p {
-    width: auto;
-  }
-
-  .latest_works .container_fig {
-    display: block;
-    height: auto;
-    margin: 0;
-    width: 100%;
-  }
-
-
-  .latest_works .imgs .container {
-    display: block;
-    margin: auto 0;
-    width: 100%;
-
-  }
-
-  .latest_works .container_fig figure {
-      margin:0 auto;
-    margin-bottom: 7%;
-    width:70%;
-
-  }
-  .latest_works .imgs .container .img_right, .latest_works .imgs .container .img_left{
-      margin:0;
-  }
-  .latest_works .imgs .container .img_left{
-      margin-bottom:4%;
-  }
-  footer .container {
-   
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1%;
-  }
-
-    footer .container img {
-      width: 70px;
-      height: 70px;
     }
 
     .bottom {
-      width: auto;
-      height: auto;
-      text-align: center;
-      margin: 0 auto;
-    }
-
-  footer .container div {
-    margin: 0 auto;
-    width:30%;
-    margin-bottom: 10%;
-    margin-right:2%;
-  }
- 
-  footer .container .free, footer .container .who {
-    padding: 0;
-  }
-
-
-
-  footer input {
-    width: 100%;
-  }
-
-  form button {
-    margin-left: auto;
-  }
-
-
-
-  .bottom {
-    width: auto;
-    height: auto;
-  }
-
-    .bottom .container {
-      text-align: center;
-      margin: 0 auto;
-      width:80%;
-    }
-
-    .bottom p {
-      font-size: 12px;
-      margin-top: 3%;
-      margin-left: 2%;
-    }
-
-    .bottom .container ul {
-      
-    }
-
-      .bottom .container ul li {
-        margin: 2%;
-        text-align:center;
-      }
-
-        .bottom .container ul li a {
-          font-size: 14px;
-        }
-  .navbar_header .container {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-
-  /*/////////////////////*/
-  
-
-    .menu .container .fa-search {
-      display: none;
-    }
-
-
-
-
-  .menu .container {
-    width: 100%;
-   
-    margin: auto 3% ;
-   
-  }
-
-  .menu .container .menu_items{
-      padding:0;
-      width:auto;
-      margin-right:20px;
-      
-  }
-    .menu .container .menu_items li a{
-        font-size:12px;
-       
-    }
-
-
-  .navbar .menu .menu_items li ul .mega .inner {
-    width:auto;
-    left: 3%;
-    right:3%;
-    padding: 0 15px;
-    height: auto;
-    z-index: 10000;
-    font-size: 14px;
-    padding-bottom: 20px;
-  }
-
-
-
-}
-
-
-
-@media screen and (min-width:1025px)and (max-width:1300px) {
-    .who_we_are .container, .work .container, .latest_works .container {
         width: auto;
         height: auto;
         text-align: center;
         margin: 0 auto;
-        padding: 1%;
-        padding-top: 10%;
     }
 
-  .who_we_are ul {
-    margin: 0;
-    padding: 5%;
-    width: auto;
-  }
-
-    .who_we_are ul li {
-      margin: 0 5%;
-      width: auto;
+    footer .container div {
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 10%;
     }
 
-      .who_we_are ul li p {
-        width: auto;
-      }
+    footer .container .free, footer .container .who {
+        padding: 0;
+    }
 
 
-  .latest_works .container h2 {
-    width: auto;
-  }
+    footer input {
+        width: 100%;
+    }
 
-  .latest_works .container p {
-    width: auto;
-  }
+    form button {
+        margin-right: auto;
+    }
 
-  .latest_works .container_fig {
-    display: block;
-    height: auto;
-    margin: 0;
-    width: 100%;
-  }
-
-
-  .latest_works .imgs .container {
-    display: block;
-    margin: auto 0;
-    width: 100%;
-  }
-
-  .latest_works .container_fig figure {
-    margin: 0 auto;
-    margin-bottom: 7%;
-    width: 50%;
-  }
-
-  .latest_works .imgs .container .img_right, .latest_works .imgs .container .img_left {
-    margin: 0;
-  }
-
-  .latest_works .imgs .container .img_left {
-    margin-bottom: 4%;
-  }
-  footer .container {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1%;
-  }
-
-   
-
-  .bottom {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  footer .container div {
-    margin: 0 auto;
-    width: 30%;
-    margin-bottom: 10%;
-    margin-right: 2%;
-  }
-
-  footer .container .free, footer .container .who {
-    padding: 0;
-  }
-
-
-
-  footer input {
-    width: 100%;
-  }
-
-  form button {
-    margin-left: auto;
-  }
-
-  .bottom {
-    width: auto;
-    height: auto;
-  }
 
     .bottom .container {
-      text-align: center;
-      margin: 0 auto;
-      width:85%;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
     }
 
     .bottom p {
-      font-size: 14px;
-      margin-top: 2%;
-      margin-left: 2%;
+        font-size: 12px;
+        margin-top: 4%;
+        margin-left: 2%;
     }
+
 
     .bottom .container ul li {
-      margin:2%;
+        margin: 1%;
     }
 
-      .bottom .container ul li a {
+        .bottom .container ul li a {
+            font-size: 14px;
+        }
+
+    .navbar_header .container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+
+    .menu .container {
+        width: auto;
+        height: auto;
+        margin-left: 7%;
         font-size: 14px;
-      }
+    }
 
-     .navbar_header .container{
-          width:85%;
-          height:auto;
-          margin:0 auto;
-      }
+        .menu .container .menu_items li {
+            display: none;
+        }
+
+            .menu .container .menu_items li:nth-child(6) {
+                display: block;
+            }
 
 
-  .menu .container {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    font-size:20px;
-  }
-    .menu .container .fa-search{
-        display:none;
+
+
+    .navbar .menu .menu_items li ul .mega .inner {
+        width: auto;
+        left: 1%;
+        right: 1%;
+        padding: 0 15px;
+        height: auto;
+        z-index: 10000;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+        .navbar .menu .menu_items li ul .mega .inner img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .navbar .menu .menu_items li ul .mega .inner button {
+            font-size: 8px;
+        }
+    .carousel-dots
+    {
+        left:35%;
+    }
+}
+
+
+
+@media screen and (min-width:701px)and (max-width:1000px) {
+
+    .who_we_are .container, .work .container, .latest_works .container {
+        text-align: center;
+        margin: auto 3%;
+        padding: 1%;
+        padding-top: 7%;
+    }
+
+    .who_we_are ul {
+        display: flex;
+        margin: auto 3%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+        .who_we_are ul li, .who_we_are ul li p {
+            width: auto;
+            height: auto;
+        }
+
+    .latest_works {
+        padding: 0;
     }
 
 
-  .navbar .menu .menu_items li ul .mega .inner {
-    
-    width:auto;
-   left:5%;
-   right:5%;
-    padding: 0 15px;
+        .latest_works .container_fig {
+            display: flex;
+            margin: 0;
+        }
+
+
+
+        .latest_works .imgs .container {
+            display: flex;
+            justify-content: center;
+            margin: 0 110px;
+            width: auto;
+            padding: 0;
+            height: auto;
+        }
+            .latest_works .imgs .container .img_left .img_1{
+               
+            }
+            .latest_works .imgs .container .img_left, .latest_works .imgs .container .img_right {
+            }
+
+
+
+
+
+
+            footer div {
+                margin-right: 3%;
+            }
    
-    height: auto;
-    z-index: 10000;
-    font-size:14px;
-    padding-bottom:20px;
+    footer .container .free{
+        padding:0;
+    }
+    footer form{
+        display:block;
+    }
+    footer button{
+        position:relative;
+    }
+    .bottom .container {
+        
+        height: auto;
+        text-align: center;
+        margin: 0 110px;
+        width:auto;
+    }
+
+
    
-  }
+    .navbar_header .container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
 
 
 
+    .menu .container {
+        width: auto;
+        height: auto;
+        margin-left: 7%;
+        font-size: 14px;
+    }
+
+        .menu .container .menu_items li {
+            display: none;
+        }
+
+            .menu .container .menu_items li:nth-child(6), .menu .container .menu_items li:nth-child(5),
+            .menu .container .menu_items li:nth-child(4), .menu .container .menu_items li:nth-child(3)
+            {
+                display: block;
+            
+                      }
+
+
+
+
+    .navbar .menu .menu_items li ul .mega .inner {
+        width: auto;
+        left: 1%;
+        right: 1%;
+        padding: 0 15px;
+        height: auto;
+        z-index: 10000;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+        .navbar .menu .menu_items li ul .mega .inner img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .navbar .menu .menu_items li ul .mega .inner button {
+            font-size: 8px;
+        }
+
+    .carousel-dots {
+        left: 40%;
+    }
 }
 
 
 
 
+@media screen and (min-width:1001px)and (max-width:2024px){
+
+    .who_we_are .container, .work .container, .latest_works .container {
+        text-align: center;
+        margin: auto 3%;
+        padding: 1%;
+        padding-top: 7%;
+    }
+
+    .who_we_are ul {
+        display: flex;
+        margin: auto 3%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+        .who_we_are ul li, .who_we_are ul li p {
+            width: auto;
+            height: auto;
+        }
+
+    .latest_works {
+        padding: 0;
+    }
 
 
+        .latest_works .container_fig {
+            display: flex;
+         
+        }
+
+        .latest_works .imgs .container{
+            padding-bottom:5%;
+        }
+
+
+        .latest_works .imgs .container {
+            display: flex;
+        }
+        .latest_works .container_fig{
+            
+        }
+
+
+
+
+
+
+
+        footer div {
+            margin-right: 3%;
+        }
+
+    footer .container .free {
+        padding: 0;
+    }
+
+    footer form {
+        display: block;
+    }
+
+    footer button {
+        position: relative;
+    }
+
+    .bottom .container {
+        height: auto;
+        text-align: center;
+        margin: 0 110px;
+        width: auto;
+    }
+
+
+
+    .navbar_header .container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+
+    .menu .container {
+        width: auto;
+        height: auto;
+        margin-left: 7%;
+        font-size: 14px;
+    }
+
+    
+
+
+
+    .navbar .menu .menu_items li ul .mega .inner {
+        width: auto;
+        left: 1%;
+        right: 1%;
+        padding: 0 15px;
+        height: auto;
+        z-index: 10000;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+        .navbar .menu .menu_items li ul .mega .inner img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .navbar .menu .menu_items li ul .mega .inner button {
+            font-size: 8px;
+        }
+
+    .carousel-dots {
+        left: 45%;
+    }
+}
