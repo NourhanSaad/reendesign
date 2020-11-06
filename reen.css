@@ -954,7 +954,7 @@ form button:hover {
         left: 29%;
     }
         
-    }
+    
 
 
 
@@ -1013,7 +1013,7 @@ form button:hover {
     }
     .cover_1, .cover_2, .cover_3, .cover_4, .cover_5
     {
-        height:650px;
+        height:500px;
     }
     .wrapper .container
     {
@@ -1024,11 +1024,11 @@ form button:hover {
 
         .wrapper .container button
         {
-            margin-top:0;
+            margin-top:15px;
 
         }
     .wrapper .container p{
-        font-size:16px;
+        font-size:18px;
     }
     .wrapper .container h2{
         font-size:25px;
