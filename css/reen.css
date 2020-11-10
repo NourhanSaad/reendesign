@@ -111,10 +111,14 @@ ul .social {
 
 .contact li a:hover,
 .social li a:hover,
-.menu .menu_items li a:hover {
+.menu .menu_items li a:hover,.menu .container .search:hover{
     color: #00BC9C;
 }
-
+.menu .container .search{ 
+color:#506A85;
+    margin: 0 0 0 auto;
+    line-height: 1.5;
+}
 /*menu              */
 .menu {
     background-color:#fff;
@@ -155,25 +159,22 @@ ul .social {
         
     }
 
-.search {
-    width: 33%;
-    text-align: end;
-    line-height: 2;
-    color: #506A85;
-}
 
 
 /*mega menu*/
- .menu_i ul{
+ .menu_i .mega{
    display:none;
 
   
 }
-
-.navbar .menu .menu_items .menu_i a{
+.inner .mega_list li:hover{
+    color:#00BC9C;
+}
+.navbar .menu .menu_items .menu_i a:hover{
     padding-bottom:30px;
 }
-.navbar .menu .menu_items li ul .mega .inner {
+
+.navbar .menu .menu_items li .mega .inner {
     position: absolute;
     width: auto;
     height: auto;
@@ -192,10 +193,10 @@ ul .social {
 }
 
 
-.navbar .menu .menu_items .menu_i:hover ul {
+.navbar .menu .menu_items .menu_i:hover .mega {
   display:block;
 }
-.navbar .menu .menu_items a:hover {
+.navbar .menu .menu_items li a:hover {
     background-color: #F2F5F7;
     border-radius: 5px;
     
@@ -207,7 +208,7 @@ ul .social {
     margin-bottom: 5px;
   }
 
-.navbar .menu .menu_items li ul .mega .inner div {
+.navbar .menu .menu_items li .mega .inner div {
     width: 24%;
 margin:0 auto;
 font-size:14px;
@@ -217,15 +218,19 @@ font-size:14px;
     color: #506a85;
     text-align: center;
 }
-
-.mega button {
-    border: none;
-    outline: 0;
+.inner h4{
+    font-family:'Source Sans Pro';
+}
+.navbar .menu .menu_items li .mega .inner .bt {
+   
     background-color: #00BC9C;
     padding: 10px;
     cursor: pointer;
     color: #fff;
     font-weight: bold;
+}
+.navbar .menu .menu_items li .mega .inner .bt:hover{
+    border-radius: 0;
 }
 
 .mega .mega_list {
@@ -357,21 +362,21 @@ font-size:14px;
         font-family: 'Source Sans Pro', Regular;
         padding:0 115px;
         margin-top:10px;
+        margin-bottom: 30px;
     }
 
-    .wrapper .container button {
+    .wrapper .container .cover_bt {
         background-color: #00BC9C;
-        border: none;
-        outline: none;
         color: #fff;
         font-size: 18px;
         border-radius:5px;
         cursor: pointer;
         font-family: 'Source Sans Pro';
         font-weight:bold;
-        width:280px;
-        height:50px;
+        padding: 15px 50px;
         margin-top:30px;
+        text-decoration: none;
+        outline: 0;
     }
 
 
@@ -579,7 +584,7 @@ font-size:14px;
     display:none;
 }
 /*work*/
-.work button {
+.work .work_bt {
     width: 150px;
     height: 50px;
     color: #fff;
@@ -589,9 +594,10 @@ font-size:14px;
     font-family: 'Source Sans Pro';
     font-weight: bold;
     outline: none;
-    border: 0;
+    padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -656,7 +662,7 @@ form input {
     width: auto;
 }
 
-form button {
+form input[type=submit] {
     background-color: #00BC9C;
     color: #fff;
     border: none;
@@ -671,7 +677,7 @@ form button {
     font-weight: bold;
 }
 
-form button:hover {
+form input[type=submit]:hover {
     cursor: pointer;
 }
 /*bottom footer */
@@ -738,7 +744,7 @@ form button:hover {
 
     #menu__toggle:checked ~ .menu__box {
         visibility: visible;
-        left: 0;
+        right: 0;
         z-index: 3000;
    
     }
@@ -752,9 +758,10 @@ form button:hover {
     cursor: pointer;
     z-index: 1;
     top: 8px;
-    left: 5px;
+    right: 5px;
     z-index: 100000;
     color: #506A85;
+   left:92%;
     
 }
 
@@ -784,7 +791,7 @@ form button:hover {
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: -100%;
+    right: -100%;
     width: 200px;
     height: 100%;
     margin: 0;
@@ -814,7 +821,11 @@ form button:hover {
         cursor:pointer;
     }
 
-
+/*
+.hamburger-menu{
+    right: -100%;
+}
+*/
 
 
 
@@ -908,7 +919,7 @@ form button:hover {
         padding: 15px;
         padding-bottom:0;
         display:block;
-        text-align:end;
+        text-align: left;
       
     }
 
@@ -976,14 +987,15 @@ form button:hover {
         
     .bottom .container
     {
-        display:block;
+        display:flex;
         text-align:center;
-       margin:0 auto;
+        margin:0 auto;
+        flex-direction: column-reverse;
         
     }
         .bottom .container p{
-            margin:auto 20px;
-            padding-top:20px;
+            margin:auto ;
+            padding-bottom:20px;
         }
         .bottom .container ul {
          justify-content:center;
