@@ -900,15 +900,18 @@ form input[type=submit]:hover {
 }
 
 
+/*
 @media only screen and (max-width: 920px) {
 .menu .menu_items {
         display: none;
     }
 
 }
+*/
 
 #menu__toggle {
     opacity: 0;
+    display: none;
 }
 
     #menu__toggle:checked ~ .menu__btn > span {
@@ -940,7 +943,7 @@ form input[type=submit]:hover {
 .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -949,7 +952,8 @@ form input[type=submit]:hover {
     right: 5px;
     z-index: 100000;
     color: #506A85;
-   left:92%;
+   margin-right: 10px;
+    margin-top: 5px;
     
 }
 
@@ -1120,7 +1124,10 @@ form input[type=submit]:hover {
     }
      .navbar_header .container, .menu .container
     {
-        margin: 0 2%;
+        margin:auto;
+        width: auto;
+        padding: 0;
+        height: auto;
     }
    
     .hamburger-menu{
@@ -1132,8 +1139,7 @@ form input[type=submit]:hover {
   
 
     .menu .container {
-        padding: 15px;
-        padding-bottom:0;
+        padding: 15px 15px 0 15px;
         display:block;
         text-align: left;
       
@@ -1301,5 +1307,8 @@ footer .container .img_overlay .overlay:hover{
     height: 30px;
     
 }
+    .navbar_header{
+        display: none;
+    }
 }
 
