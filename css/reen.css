@@ -909,6 +909,10 @@ form input[type=submit]:hover {
 }
 */
 
+.hamburger-menu
+{
+    position: relative;
+}
 #menu__toggle {
     opacity: 0;
     display: none;
@@ -1109,23 +1113,16 @@ form input[type=submit]:hover {
 }
 
 
-
-
-
-
-
 @media only screen and (max-width:919px) {
-   .wrapper .container,
-    .who_we_are .container, .latest_works .container, .latest_works .container_fig,.latest_works .imgs .container, .work .container, footer .container, .bottom .container{
+   .wrapper .container,.who_we_are .container, .latest_works .container, .latest_works .container_fig,.latest_works .imgs .container, .work .container, footer .container, .bottom .container{
         width: auto;
         padding: 0 15px;
         height: auto;
-        margin: 100px 2%;
+        margin: 70px 20px;
     }
-     .navbar_header .container, .menu .container
+   .menu .container
     {
-        margin:auto;
-        width: auto;
+        margin:0 auto;
         padding: 0;
         height: auto;
     }
@@ -1230,7 +1227,7 @@ form input[type=submit]:hover {
      header .menu{
          position:fixed;
          z-index:10000;
-         width:100%;
+         width:auto;
          top:0;
      }
 
@@ -1244,7 +1241,7 @@ form input[type=submit]:hover {
     .wrapper .container
     {
         margin:0;
-        margin-top:80px;
+        margin-top:130px;
     }
 
 
@@ -1309,6 +1306,10 @@ footer .container .img_overlay .overlay:hover{
 }
     .navbar_header{
         display: none;
+    }
+    
+    body{
+        overflow-x: hidden;
     }
 }
 
